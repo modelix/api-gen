@@ -1,0 +1,2 @@
+# Gradle resolves and copies dependency JARs in here that should not end up in Git
+lib/

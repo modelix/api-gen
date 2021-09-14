@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/org.modelix.mps.apigen/org.modelix.mps.apigen.mpl" folder="10_lang" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.modelix.mps.api-gen.allScripts/org.modelix.mps.api-gen.allScripts.msd" folder="01_build" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.modelix.mps.api-gen.build/org.modelix.mps.api-gen.build.msd" folder="01_build" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.modelix.mps.apigen.runtime.stubs/org.modelix.mps.apigen.runtime.stubs.msd" folder="10_lang" />
+      <modulePath path="$PROJECT_DIR$/tests/languages/test.org.modelix.mps.apigen.simple/test.org.modelix.mps.apigen.simple.mpl" folder="20_test" />
+      <modulePath path="$PROJECT_DIR$/tests/solutions/apigen.org.modelix.model.repositoryconcepts/apigen.org.modelix.model.repositoryconcepts.msd" folder="20_test" />
+      <modulePath path="$PROJECT_DIR$/tests/solutions/test.org.modelix.mps.apigen.simple.tests/test.org.modelix.mps.apigen.simple.tests.msd" folder="20_test" />
+    </projectModules>
+  </component>
+</project>
