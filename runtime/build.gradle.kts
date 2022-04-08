@@ -10,7 +10,6 @@ val mpsVersion: String by project
 
 repositories {
     mavenCentral()
-    maven { url = uri("https://projects.itemis.de/nexus/content/groups/OS/") }
     maven {
         url = uri("https://maven.pkg.github.com/modelix/modelix")
         credentials {
@@ -18,6 +17,7 @@ repositories {
             password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
         }
     }
+    maven { url = uri("https://projects.itemis.de/nexus/content/groups/OS/") }
 }
 
 dependencies {

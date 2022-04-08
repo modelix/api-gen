@@ -15,8 +15,15 @@ plugins {
 }
 
 repositories {
-    maven { url = uri("https://projects.itemis.de/nexus/content/repositories/mbeddr") }
     mavenCentral()
+    maven {
+        url = uri("https://maven.pkg.github.com/modelix/modelix")
+        credentials {
+            username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
+            password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+        }
+    }
+    maven { url = uri("https://projects.itemis.de/nexus/content/repositories/mbeddr") }
 }
 
 val mpsStubs by configurations.creating
