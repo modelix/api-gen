@@ -139,6 +139,10 @@ class MPSConceptReference(private val concept: AbstractConcept<*>) : IConceptRef
     override fun resolve(area: IArea?): IConcept? {
         TODO("Not yet implemented")
     }
+
+    override fun serialize(): String {
+        TODO("Not yet implemented")
+    }
 }
 
 class MPSProperty(private val concept: AbstractConcept<*>, override val name: String) : IProperty {

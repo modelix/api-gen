@@ -30,10 +30,6 @@ val artifactsDir = file("$buildDir/artifacts")
 val mpsVersion: String by project
 val mpsExtensionsVersion : String by project
 
-val gitLabPrivateToken : String? by project
-
-
-version = "0.4"
 
 downloadJbr {
     jbrVersion = "11_0_10-b1145.96"
@@ -165,8 +161,13 @@ publishing {
     }
     repositories {
         mavenLocal()
-        repositories {
-
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/modelix/api-gen")
+            credentials {
+                username = project.findProperty("gpr.user") as? String ?: System.getenv("USERNAME")
+                password = project.findProperty("gpr.key") as? String ?: System.getenv("TOKEN")
+            }
         }
     }
 }

@@ -6,18 +6,23 @@ plugins {
 
 val mpsVersion: String by project
 
-version = "0.3.5"
+
 
 repositories {
     mavenCentral()
     maven { url = uri("https://projects.itemis.de/nexus/content/groups/OS/") }
+    maven {
+        url = uri("https://maven.pkg.github.com/modelix/modelix")
+        credentials {
+            username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
+            password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+        }
+    }
 }
 
 dependencies {
-    implementation("org.modelix:model-api:$mpsVersion")
-    implementation("org.modelix:model-client:0.0.55")
-    implementation("com.jetbrains:mps-core:$mpsVersion")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0-RC")
+    api("org.modelix:model-api:2021.2.+")
+    api("org.modelix:model-client:2020.3.96")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }
@@ -41,7 +46,6 @@ val gitLabPrivateToken: String? by project
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "org.modelix.mps.adapter"
             artifactId = "runtime"
             from(components["java"])
         }
@@ -49,8 +53,13 @@ publishing {
 
     repositories {
         mavenLocal()
-        repositories {
-
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/modelix/api-gen")
+            credentials {
+                username = project.findProperty("gpr.user") as? String ?: System.getenv("USERNAME")
+                password = project.findProperty("gpr.key") as? String ?: System.getenv("TOKEN")
+            }
         }
     }
 
