@@ -2,9 +2,14 @@ plugins { `maven-publish` }
 
 group = "org.modelix.mps.api-gen"
 
+var projectVersion = "0.5"
 subprojects {
     group = "org.modelix.mps.api-gen"
-    version = "0.5"
+    version = if(System.getenv("CI") != null) {
+        "$projectVersion.${System.getenv("GITHUB_RUN_NUMBER")}"
+    } else {
+        "$projectVersion-SNAPSHOT"
+    }
 }
 
 ext["mpsVersion"] = "2020.3.5"

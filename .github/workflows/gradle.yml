@@ -29,6 +29,11 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Build with Gradle
-      uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
+      uses: gradle/gradle-build-action@v2.1.5
       with:
         arguments: build
+    - name: Publish
+      uses: gradle/gradle-build-action@v2.1.5
+      if: ${{ github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
+      with:
+        arguments: publish
