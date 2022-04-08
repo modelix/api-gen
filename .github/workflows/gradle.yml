@@ -17,8 +17,11 @@ permissions:
   contents: read
 
 jobs:
-  build:
 
+  build:
+    env:
+      TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      USERNAME: ${{ github.actor }}
     runs-on: ubuntu-latest
 
     steps:
