@@ -110,7 +110,7 @@ val buildLanguages by tasks.registering(de.itemis.mps.gradle.BuildLanguages::cla
     description = "Build all languages in the MPS project"
     inputs.files(fileTree("$projectDir/solutions").include("**/*.mps", "**/*.msd")).withPropertyName("mps-solution")
     inputs.files(fileTree("$projectDir/languages").include("**/*.mps", "**/*.msd")).withPropertyName("mps-languages")
-    inputs.file(file("$buildDir/build.xml"))
+    inputs.file(file("$projectDir/build.xml"))
     outputs.file(file("build/build/artifacts/org.modelix.mps.api-gen/org.modelix.mps.api-gen.zip"))
     script = "$projectDir/build.xml"
     targets = listOf("generate", "assemble")
@@ -121,7 +121,7 @@ val buildTests by tasks.registering(de.itemis.mps.gradle.BuildLanguages::class) 
     group = "test"
     description = "Build all tests in the MPS project"
     inputs.files(fileTree("$projectDir/tests").include("**/*.mps", "**/*.msd")).withPropertyName("mps-solution")
-    inputs.file(file("$buildDir/build-test.xml"))
+    inputs.file(file("$projectDir/build-test.xml"))
     script = "$projectDir/build-test.xml"
     targets = listOf("generate", "assemble", "check")
     dependsOn(buildLanguages)
