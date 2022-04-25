@@ -252,6 +252,9 @@
       <node concept="m$_yC" id="4_sKyhYhmnA" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="jetbrains.mps.ide.httpsupport" />
       </node>
+      <node concept="m$_yC" id="7iHnRxbzNe4" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
+      </node>
       <node concept="3_J27D" id="7Q4ofxJ_nm9" role="m_cZH">
         <node concept="3Mxwew" id="7Q4ofxJ_nma" role="3MwsjC">
           <property role="3MwjfP" value="org.modelix.mps.api-gen" />
@@ -339,12 +342,6 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
             </node>
           </node>
-          <node concept="1SiIV0" id="5c_4V_gVcun" role="3bR37C">
-            <node concept="3bR9La" id="5c_4V_gVcuo" role="1SiIV1">
-              <property role="3bR36h" value="true" />
-              <ref role="3bR37D" to="90a9:5U8hsWC70jw" resolve="org.modelix.model.api" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="5c_4V_gVcup" role="3bR37C">
             <node concept="3bR9La" id="5c_4V_gVcuq" role="1SiIV1">
               <ref role="3bR37D" to="ffeo:7Kfy9QB6L9O" resolve="jetbrains.mps.lang.smodel" />
@@ -411,6 +408,11 @@
             <node concept="3qWCbU" id="3KDDa2jZihH" role="3LXTna">
               <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7iHnRxbzLVy" role="3bR37C">
+          <node concept="3bR9La" id="7iHnRxbzLVz" role="1SiIV1">
+            <ref role="3bR37D" node="5c_4V_gVcue" resolve="org.modelix.mps.apigen.gen" />
           </node>
         </node>
       </node>
