@@ -32,3 +32,31 @@ abstract class AbstractNode(override val iNode: INode) : INodeHolder {
             return MPSLanguageRegistry.getInstance(p)
         }
 }
+
+class BaseNode(iNode: INode) : AbstractNode(iNode)
+class FakeConcept() : AbstractConcept<BaseNode>(false, "modelix.fake","fake","") {
+    companion object{
+        @JvmField
+        val INSTANCE = FakeConcept()
+    }
+
+    override fun myProperties(): HashMap<String, MPSProperty> {
+        return hashMapOf()
+    }
+
+    override fun myChildLinks(): HashMap<String, MPSChildLink> {
+        return hashMapOf()
+    }
+
+    override fun myReferenceLinks(): HashMap<String, MPSReferenceLink> {
+        return hashMapOf()
+    }
+
+    override fun mySuperConcepts(): List<AbstractConcept<*>> {
+       return emptyList()
+    }
+
+    override fun createInstance(iNode: INode): BaseNode = BaseNode(iNode)
+
+    override fun doInit() {}
+}
