@@ -2,7 +2,7 @@ plugins { `maven-publish` }
 
 group = "org.modelix.mps.api-gen"
 
-var projectVersion = "0.5"
+var projectVersion = "0.6"
 subprojects {
     group = "org.modelix.mps.api-gen"
     version = if(System.getenv("CI") != null) {
