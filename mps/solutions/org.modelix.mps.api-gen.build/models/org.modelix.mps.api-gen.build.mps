@@ -415,6 +415,16 @@
             <ref role="3bR37D" node="5c_4V_gVcue" resolve="org.modelix.mps.apigen.gen" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7eWqrtVI8YH" role="3bR37C">
+          <node concept="3bR9La" id="7eWqrtVI8YI" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ZViq9oppal" resolve="jetbrains.mps.make.facets" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7eWqrtVI8YJ" role="3bR37C">
+          <node concept="3bR9La" id="7eWqrtVI8YK" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg2" resolve="jetbrains.mps.smodel.resources" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7Q4ofxJ_nlU" role="2G$12L">
         <property role="BnDLt" value="true" />
