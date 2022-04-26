@@ -56,6 +56,7 @@
     </echoxml>
     <jar destfile="${build.layout}/org.modelix.mps.api-gen.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.modelix.mps.api-gen.build" />
+      <fileset dir="${basedir}/solutions/org.modelix.mps.api-gen.build" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/solutions/org.modelix.mps.api-gen.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/org.modelix.mps.api-gen.build.jar" />
     </jar>
