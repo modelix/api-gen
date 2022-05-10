@@ -152,18 +152,6 @@ publishing {
         create<MavenPublication>("mps-plugin") {
             artifactId = "mps-plugin"
             artifact(packageMpsPlugin)
-            pom {
-                withXml {
-                    val dependenciesNode = asNode().appendNode("dependencies")
-                    mpsDependencies.resolvedConfiguration.firstLevelModuleDependencies.forEach {
-                        val dependencyNode = dependenciesNode.appendNode("dependency")
-                        dependencyNode.appendNode("groupId", it.moduleGroup)
-                        dependencyNode.appendNode("artifactId", it.moduleName)
-                        dependencyNode.appendNode("version", it.moduleVersion)
-                        dependencyNode.appendNode("type", it.moduleArtifacts.first().type)
-                    }
-                }
-            }
         }
     }
     repositories {
