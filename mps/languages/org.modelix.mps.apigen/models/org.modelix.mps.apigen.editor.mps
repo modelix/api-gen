@@ -126,7 +126,7 @@
     <node concept="3F1sOY" id="5g7sLmq9X24" role="2wV5jI">
       <ref role="1NtTu8" to="a3a9:4i$kpGnkFPw" resolve="ref" />
       <node concept="A1WHu" id="7iHnRxaX$K1" role="3vIgyS">
-        <ref role="A1WHt" to="tpep:4Lw1UpBCaUD" resolve="AbstractLanguageIdentity_Transformation" />
+        <ref role="A1WHt" to="tpep:4Lw1UpBCaUD" resolve="LanguageIdentity_Transformation" />
       </node>
     </node>
   </node>
