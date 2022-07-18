@@ -145,6 +145,7 @@ val packageMpsPlugin by tasks.registering(Zip::class) {
     destinationDirectory.set(layout.buildDirectory.dir("dist"))
 
     from(file("build/artifacts/org.modelix.mps.api-gen"))
+    include("org.modelix.mps.api-gen/**", "org.modelix.mps.api-gen.build/**")
 }
 
 publishing {
