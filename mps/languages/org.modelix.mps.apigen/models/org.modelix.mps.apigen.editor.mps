@@ -29,10 +29,14 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="6718020819487620876" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Default" flags="ng" index="A1WHr" />
       <concept id="6718020819487620873" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Named" flags="ng" index="A1WHu">
         <reference id="6718020819487620874" name="menu" index="A1WHt" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1630016958697718209" name="jetbrains.mps.lang.editor.structure.IMenuReference_Default" flags="ng" index="2Z_bC8">
+        <reference id="1630016958698373342" name="concept" index="2ZyFGn" />
+      </concept>
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
         <child id="5991739802479788259" name="type" index="22hAXT" />
@@ -160,6 +164,9 @@
         <node concept="3F2HdR" id="5g7sLmq9X2D" role="3EZMnx">
           <ref role="1NtTu8" to="a3a9:5g7sLmq9X26" resolve="languages" />
           <node concept="2iRkQZ" id="5g7sLmq9X2G" role="2czzBx" />
+          <node concept="A1WHr" id="55EYzphEYtF" role="3vIgyS">
+            <ref role="2ZyFGn" to="a3a9:4i$kpGnkFPv" resolve="LanguageInclude" />
+          </node>
         </node>
         <node concept="2iRfu4" id="5g7sLmq9X2_" role="2iSdaV" />
       </node>

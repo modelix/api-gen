@@ -199,8 +199,15 @@
       </node>
     </node>
     <node concept="1l3spV" id="7Q4ofxJ_nmf" role="1l3spN">
-      <node concept="L2wRC" id="4_sKyhYhzoe" role="39821P">
-        <ref role="L2wRA" node="4_sKyhYhzgl" resolve="org.modelix.mps.api-gen.build" />
+      <node concept="398223" id="55EYzphELjo" role="39821P">
+        <node concept="L2wRC" id="4_sKyhYhzoe" role="39821P">
+          <ref role="L2wRA" node="4_sKyhYhzgl" resolve="org.modelix.mps.api-gen.build" />
+        </node>
+        <node concept="3_J27D" id="55EYzphELjq" role="Nbhlr">
+          <node concept="3Mxwew" id="55EYzphELjX" role="3MwsjC">
+            <property role="3MwjfP" value="org.modelix.mps.api-gen.build" />
+          </node>
+        </node>
       </node>
       <node concept="m$_wl" id="7Q4ofxJ_nmj" role="39821P">
         <ref role="m_rDy" node="7Q4ofxJ_nm2" resolve="org.modelix.mps.apigen" />
