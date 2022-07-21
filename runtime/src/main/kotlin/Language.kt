@@ -27,14 +27,16 @@ class MPSLanguageRegistry: IConceptReferenceSerializer {
 
     companion object {
         private val languages = mutableListOf<MPSLanguage>()
+        private val conceptsById = mutableMapOf<String, IConcept>()
         fun register(language: MPSLanguage) {
             languages.add(language)
+            language.getConcepts().forEach { conceptsById[it.getUID()] = it }
         }
         fun <T : INodeHolder>getInstance(iNode: INode): T? {
             return (iNode.concept as AbstractConcept<T>).createInstance(iNode)
         }
         fun getConceptById(id: String):AbstractConcept<*>? {
-            return languages.flatMap { it.getConcepts() }.find { it.getUID() == id } as? AbstractConcept<*>
+            return conceptsById[id] as? AbstractConcept<*>
         }
     }
 
