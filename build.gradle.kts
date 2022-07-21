@@ -2,7 +2,7 @@ plugins { `maven-publish` }
 
 group = "org.modelix.mps.api-gen"
 
-var projectVersion = "0.9"
+var projectVersion = "0.15"
 subprojects {
     group = "org.modelix.mps.api-gen"
     version = if(System.getenv("CI") != null) {
@@ -13,4 +13,4 @@ subprojects {
 }
 
 ext["mpsVersion"] = "2020.3.5"
-ext["mpsExtensionsVersion"] = "2020.3.1995.7818bbc"
+ext["mpsExtensionsVersion"] = "2020.3.2293.481eecd"
