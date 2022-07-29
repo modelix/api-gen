@@ -25,7 +25,7 @@ class MPSCompatibleNodeReference(private val modelId: String, private val nodeId
     }
 }
 
-private val MPS_NODE_REF_REGEX =  Regex("""mps-node:r:([abcde0-9\-]*)\((\S*)\)\/([0-9]*)""")
+private val MPS_NODE_REF_REGEX =  Regex("""mps-node:r:([abcdef0-9\-]*)\((\S*)\)\/([0-9]*)""")
 class MPSNodeReferenceDeserializer {
     companion object : INodeReferenceSerializer {
         override fun deserialize(serialized: String): INodeReference? {
