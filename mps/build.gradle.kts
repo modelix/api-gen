@@ -46,7 +46,7 @@ dependencies {
     mpsStubs(project(":runtime"))
     mps("com.jetbrains:mps:$mpsVersion")
     mpsDependencies("de.itemis.mps:extensions:$mpsExtensionsVersion")
-    buildDependencies("org.apache.ant:ant-junit:1.10.11")
+    buildDependencies("org.apache.ant:ant-junit:1.10.12")
 }
 
 val copyStubLibs by tasks.registering(Sync::class) {
