@@ -1,7 +1,7 @@
 plugins {
     java
     `maven-publish`
-    kotlin("jvm") version "1.6.0"
+    kotlin("jvm") version "1.7.10"
 }
 
 val mpsVersion: String by project
