@@ -29,7 +29,7 @@ repositories {
 dependencies {
     api("org.modelix:model-api:2022.0.+")
     api("org.modelix:model-client:2020.3.96")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }
 
