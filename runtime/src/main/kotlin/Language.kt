@@ -33,7 +33,7 @@ class MPSLanguageRegistry: IConceptReferenceSerializer {
             language.getConcepts().forEach { conceptsById[it.getUID()] = it }
         }
         fun <T : INodeHolder>getInstance(iNode: INode): T? {
-            return (iNode.concept as AbstractConcept<T>).createInstance(iNode)
+            return (iNode?.concept as? AbstractConcept<T>)?.createInstance(iNode)
         }
         fun getConceptById(id: String):AbstractConcept<*>? {
             return conceptsById[id] as? AbstractConcept<*>
