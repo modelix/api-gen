@@ -12,5 +12,5 @@ subprojects {
     }
 }
 
-ext["mpsVersion"] = "2020.3.5"
-ext["mpsExtensionsVersion"] = "2020.3.2293.481eecd"
+ext["mpsVersion"] = "2020.3.6"
+ext["mpsExtensionsVersion"] = "2020.3.2448.814f11e"

@@ -1,16 +1,16 @@
 buildscript {
     repositories {
-        maven { url = uri("https://projects.itemis.de/nexus/content/repositories/mbeddr") }
+        maven { url = uri("https://artifacts.itemis.cloud/repository/maven-mps") }
         mavenCentral()
     }
 
     dependencies {
-        classpath("de.itemis.mps:mps-gradle-plugin:1.6.281.3790039")
+        classpath("de.itemis.mps:mps-gradle-plugin:1.9.315.4487934")
     }
 }
 
 plugins {
-    id("download-jbr") version "1.6.281.3790039"
+    id("download-jbr") version "1.9.315.4487934"
     `maven-publish`
 }
 
@@ -23,7 +23,7 @@ repositories {
             password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
         }
     }
-    maven { url = uri("https://projects.itemis.de/nexus/content/repositories/mbeddr") }
+    maven { url = uri("https://artifacts.itemis.cloud/repository/maven-mps") }
 }
 
 val mpsStubs by configurations.creating
@@ -39,7 +39,7 @@ val mpsExtensionsVersion : String by project
 
 
 downloadJbr {
-    jbrVersion = "11_0_10-b1145.96"
+    jbrVersion = "11_0_10-b1341.41"
 }
 
 dependencies {
