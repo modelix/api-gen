@@ -1,6 +1,6 @@
 pluginManagement {
     repositories {
-        maven { url = uri("https://projects.itemis.de/nexus/content/repositories/mbeddr") }
+        maven { url = uri("https://artifacts.itemis.cloud/repository/maven-mps") }
         gradlePluginPortal()
     }
 }
