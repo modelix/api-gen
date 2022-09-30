@@ -133,6 +133,9 @@ class MPSChildLink(
     override fun getUID(): String {
         return name
     }
+
+    override val targetConcept: IConcept
+        get() = childConcept
 }
 
 class MPSConceptReference(private val concept: AbstractConcept<*>) : IConceptReference {
@@ -141,6 +144,10 @@ class MPSConceptReference(private val concept: AbstractConcept<*>) : IConceptRef
     }
 
     override fun serialize(): String {
+        TODO("Not yet implemented")
+    }
+
+    override fun getUID(): String {
         TODO("Not yet implemented")
     }
 }

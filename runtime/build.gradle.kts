@@ -9,26 +9,15 @@ val mpsVersion: String by project
 
 
 repositories {
-    maven {
-        url = uri("https://maven.pkg.github.com/modelix/modelix")
-        credentials {
-            username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-            password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
-        }
-    }
-    maven {
-        url = uri("https://maven.pkg.github.com/modelix/model-api")
-        credentials {
-            username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-            password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
-        }
-    }
+    mavenLocal()
+    maven { url = uri("https://artifacts.itemis.cloud/repository/maven-mps/") }
     mavenCentral()
 }
 
 dependencies {
-    api("org.modelix:model-api:2022.0.+")
-    api("org.modelix:model-client:2020.3.96")
+    val modelixCoreVersion = "1.3.1"
+    api("org.modelix:model-api:$modelixCoreVersion")
+    api("org.modelix:model-client:$modelixCoreVersion")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }

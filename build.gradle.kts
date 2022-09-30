@@ -10,7 +10,8 @@ subprojects {
     } else {
         "$projectVersion-SNAPSHOT"
     }
+    println("Version: $version")
 }
 
 ext["mpsVersion"] = "2020.3.6"
-ext["mpsExtensionsVersion"] = "2020.3.2448.814f11e"
+ext["mpsExtensionsVersion"] = "2020.3.2456.07fd7e3"

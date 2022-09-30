@@ -15,6 +15,8 @@ plugins {
 }
 
 repositories {
+    mavenLocal()
+    maven { url = uri("https://artifacts.itemis.cloud/repository/maven-mps/") }
     mavenCentral()
     maven {
         url = uri("https://maven.pkg.github.com/modelix/modelix")
