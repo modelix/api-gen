@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-    val modelixCoreVersion = "1.3.1"
+    val modelixCoreVersion = "1.3.2"
     api("org.modelix:model-api:$modelixCoreVersion")
     api("org.modelix:model-client:$modelixCoreVersion")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
