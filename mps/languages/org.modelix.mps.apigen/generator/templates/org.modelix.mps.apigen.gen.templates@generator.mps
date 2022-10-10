@@ -976,12 +976,12 @@
           </node>
           <node concept="3cpWs6" id="2M7XbInjDkh" role="3cqZAp">
             <node concept="2OqwBi" id="5L$p2JxrNGj" role="3cqZAk">
-              <node concept="10M0yZ" id="5L$p2JxrNGk" role="2Oq$k0">
+              <node concept="10M0yZ" id="13b1YI7KXmU" role="2Oq$k0">
+                <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.INSTANCE" resolve="INSTANCE" />
                 <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
-                <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.Companion" resolve="Companion" />
               </node>
               <node concept="liA8E" id="5L$p2JxrNGl" role="2OqNvi">
-                <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry$Companion.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
+                <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
                 <node concept="37vLTw" id="5L$p2JxrNGm" role="37wK5m">
                   <ref role="3cqZAo" node="2M7XbInjDk5" resolve="child" />
                 </node>
@@ -1507,15 +1507,15 @@
           <node concept="3clFbH" id="6GZwWR3ybOC" role="3cqZAp" />
           <node concept="3cpWs6" id="6GZwWR3euH_" role="3cqZAp">
             <node concept="2OqwBi" id="6GZwWR3f8rv" role="3cqZAk">
-              <node concept="10M0yZ" id="5O3ToywDWPp" role="2Oq$k0">
-                <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.Companion" resolve="Companion" />
-                <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
-              </node>
               <node concept="liA8E" id="6GZwWR3fk_V" role="2OqNvi">
-                <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry$Companion.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
+                <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
                 <node concept="37vLTw" id="6GZwWR3fwDT" role="37wK5m">
                   <ref role="3cqZAo" node="6GZwWR3dDNo" resolve="newChild" />
                 </node>
+              </node>
+              <node concept="10M0yZ" id="13b1YI7La9F" role="2Oq$k0">
+                <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.INSTANCE" resolve="INSTANCE" />
+                <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
               </node>
             </node>
           </node>
@@ -2184,15 +2184,15 @@
               </node>
               <node concept="3cpWs6" id="2M7XbInjfMq" role="3cqZAp">
                 <node concept="2OqwBi" id="5L$p2JxrrNZ" role="3cqZAk">
-                  <node concept="10M0yZ" id="5L$p2JxrrO0" role="2Oq$k0">
-                    <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
-                    <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.Companion" resolve="Companion" />
-                  </node>
                   <node concept="liA8E" id="5L$p2JxrrO1" role="2OqNvi">
-                    <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry$Companion.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
+                    <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
                     <node concept="37vLTw" id="5L$p2JxrrO2" role="37wK5m">
                       <ref role="3cqZAo" node="2M7XbInjf_7" resolve="child" />
                     </node>
+                  </node>
+                  <node concept="10M0yZ" id="13b1YI7Lwnz" role="2Oq$k0">
+                    <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.INSTANCE" resolve="INSTANCE" />
+                    <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
                   </node>
                 </node>
               </node>
@@ -2985,15 +2985,15 @@
                           <node concept="3clFbS" id="2M7XbInkiVB" role="3clF47">
                             <node concept="3clFbF" id="5L$p2JxpWcV" role="3cqZAp">
                               <node concept="2OqwBi" id="5L$p2JxqEXu" role="3clFbG">
-                                <node concept="10M0yZ" id="5L$p2JxqvOH" role="2Oq$k0">
-                                  <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
-                                  <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.Companion" resolve="Companion" />
-                                </node>
                                 <node concept="liA8E" id="5L$p2JxqRxt" role="2OqNvi">
-                                  <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry$Companion.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
+                                  <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
                                   <node concept="37vLTw" id="5L$p2Jxr3N$" role="37wK5m">
                                     <ref role="3cqZAo" node="2M7XbInkiV_" resolve="node" />
                                   </node>
+                                </node>
+                                <node concept="10M0yZ" id="13b1YI7LQ55" role="2Oq$k0">
+                                  <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.INSTANCE" resolve="INSTANCE" />
+                                  <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
                                 </node>
                               </node>
                             </node>
@@ -3512,12 +3512,8 @@
         <node concept="3clFbS" id="6GZwWR2J$Pn" role="3clF47">
           <node concept="3cpWs6" id="6GZwWR2JAL7" role="3cqZAp">
             <node concept="2OqwBi" id="6GZwWR2JAL9" role="3cqZAk">
-              <node concept="10M0yZ" id="6GZwWR2JALa" role="2Oq$k0">
-                <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
-                <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.Companion" resolve="Companion" />
-              </node>
               <node concept="liA8E" id="6GZwWR2JALb" role="2OqNvi">
-                <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry$Companion.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
+                <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
                 <node concept="2OqwBi" id="6GZwWR2JALc" role="37wK5m">
                   <node concept="1rXfSq" id="6GZwWR2JALd" role="2Oq$k0">
                     <ref role="37wK5l" node="6GZwWR2JlXt" resolve="getINode" />
@@ -3545,6 +3541,10 @@
                     </node>
                   </node>
                 </node>
+              </node>
+              <node concept="10M0yZ" id="13b1YI7M70W" role="2Oq$k0">
+                <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
+                <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.INSTANCE" resolve="INSTANCE" />
               </node>
             </node>
           </node>
@@ -3894,12 +3894,8 @@
         <node concept="3clFbS" id="6GZwWR2KEwn" role="3clF47">
           <node concept="3cpWs6" id="6GZwWR2KEwo" role="3cqZAp">
             <node concept="2OqwBi" id="6GZwWR2KEwp" role="3cqZAk">
-              <node concept="10M0yZ" id="6GZwWR2KEwq" role="2Oq$k0">
-                <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
-                <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.Companion" resolve="Companion" />
-              </node>
               <node concept="liA8E" id="6GZwWR2KEwr" role="2OqNvi">
-                <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry$Companion.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
+                <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
                 <node concept="2OqwBi" id="6GZwWR2KEws" role="37wK5m">
                   <node concept="1rXfSq" id="6GZwWR2KEwt" role="2Oq$k0">
                     <ref role="37wK5l" node="6GZwWR2JlXt" resolve="getINode" />
@@ -3927,6 +3923,10 @@
                     </node>
                   </node>
                 </node>
+              </node>
+              <node concept="10M0yZ" id="13b1YI7Mphg" role="2Oq$k0">
+                <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
+                <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.INSTANCE" resolve="INSTANCE" />
               </node>
             </node>
           </node>
@@ -5971,15 +5971,15 @@
           </node>
           <node concept="3cpWs6" id="5L$p2Jx0fAW" role="3cqZAp">
             <node concept="2OqwBi" id="5L$p2Jx0IEi" role="3cqZAk">
-              <node concept="10M0yZ" id="5L$p2Jx0Ifl" role="2Oq$k0">
-                <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
-                <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.Companion" resolve="Companion" />
-              </node>
               <node concept="liA8E" id="5L$p2Jx0J5x" role="2OqNvi">
-                <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry$Companion.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
+                <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
                 <node concept="37vLTw" id="5L$p2Jx0Ol7" role="37wK5m">
                   <ref role="3cqZAo" node="5L$p2Jx0fAF" resolve="child" />
                 </node>
+              </node>
+              <node concept="10M0yZ" id="13b1YI7MNeu" role="2Oq$k0">
+                <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
+                <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.INSTANCE" resolve="INSTANCE" />
               </node>
             </node>
           </node>
@@ -6443,15 +6443,15 @@
             <node concept="3clFbS" id="5L$p2Jx3KnW" role="3clFbx">
               <node concept="3cpWs6" id="5L$p2Jx3KnX" role="3cqZAp">
                 <node concept="2OqwBi" id="5L$p2Jx3Z21" role="3cqZAk">
-                  <node concept="10M0yZ" id="5L$p2Jx3Z22" role="2Oq$k0">
-                    <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
-                    <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.Companion" resolve="Companion" />
-                  </node>
                   <node concept="liA8E" id="5L$p2Jx3Z23" role="2OqNvi">
-                    <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry$Companion.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
+                    <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
                     <node concept="37vLTw" id="5L$p2Jx3Z24" role="37wK5m">
                       <ref role="3cqZAo" node="5L$p2Jx3KnE" resolve="child" />
                     </node>
+                  </node>
+                  <node concept="10M0yZ" id="13b1YI7MR7J" role="2Oq$k0">
+                    <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
+                    <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.INSTANCE" resolve="INSTANCE" />
                   </node>
                 </node>
               </node>
@@ -7037,15 +7037,15 @@
                           <node concept="3clFbS" id="5L$p2Jx50dG" role="3clF47">
                             <node concept="3clFbF" id="5L$p2Jx5Jz9" role="3cqZAp">
                               <node concept="2OqwBi" id="5L$p2Jx5Jzb" role="3clFbG">
-                                <node concept="10M0yZ" id="5L$p2Jx5Jzc" role="2Oq$k0">
-                                  <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
-                                  <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.Companion" resolve="Companion" />
-                                </node>
                                 <node concept="liA8E" id="5L$p2Jx5Jzd" role="2OqNvi">
-                                  <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry$Companion.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
+                                  <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
                                   <node concept="37vLTw" id="5L$p2Jx5Jze" role="37wK5m">
                                     <ref role="3cqZAo" node="5L$p2Jx50dE" resolve="node" />
                                   </node>
+                                </node>
+                                <node concept="10M0yZ" id="13b1YI7MV3K" role="2Oq$k0">
+                                  <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
+                                  <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.INSTANCE" resolve="INSTANCE" />
                                 </node>
                               </node>
                             </node>
@@ -7358,12 +7358,8 @@
         <node concept="3clFbS" id="6GZwWR2TI0R" role="3clF47">
           <node concept="3cpWs6" id="6GZwWR2TI0S" role="3cqZAp">
             <node concept="2OqwBi" id="6GZwWR2TI0T" role="3cqZAk">
-              <node concept="10M0yZ" id="6GZwWR2TI0U" role="2Oq$k0">
-                <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
-                <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.Companion" resolve="Companion" />
-              </node>
               <node concept="liA8E" id="6GZwWR2TI0V" role="2OqNvi">
-                <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry$Companion.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
+                <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
                 <node concept="2OqwBi" id="6GZwWR2TI0W" role="37wK5m">
                   <node concept="1rXfSq" id="6GZwWR2TI0X" role="2Oq$k0">
                     <ref role="37wK5l" node="6GZwWR2JlXt" resolve="getINode" />
@@ -7391,6 +7387,10 @@
                     </node>
                   </node>
                 </node>
+              </node>
+              <node concept="10M0yZ" id="13b1YI7MVbH" role="2Oq$k0">
+                <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
+                <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.INSTANCE" resolve="INSTANCE" />
               </node>
             </node>
           </node>
@@ -7768,12 +7768,8 @@
         <node concept="3clFbS" id="6GZwWR2VqHH" role="3clF47">
           <node concept="3cpWs6" id="6GZwWR2VqHI" role="3cqZAp">
             <node concept="2OqwBi" id="6GZwWR2VqHJ" role="3cqZAk">
-              <node concept="10M0yZ" id="6GZwWR2VqHK" role="2Oq$k0">
-                <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
-                <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.Companion" resolve="Companion" />
-              </node>
               <node concept="liA8E" id="6GZwWR2VqHL" role="2OqNvi">
-                <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry$Companion.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
+                <ref role="37wK5l" to="v8zi:~MPSLanguageRegistry.getInstance(org.modelix.model.api.INode)" resolve="getInstance" />
                 <node concept="2OqwBi" id="6GZwWR2VqHM" role="37wK5m">
                   <node concept="1rXfSq" id="6GZwWR2VqHN" role="2Oq$k0">
                     <ref role="37wK5l" node="6GZwWR2JlXt" resolve="getINode" />
@@ -7801,6 +7797,10 @@
                     </node>
                   </node>
                 </node>
+              </node>
+              <node concept="10M0yZ" id="13b1YI7MX0X" role="2Oq$k0">
+                <ref role="3cqZAo" to="v8zi:~MPSLanguageRegistry.INSTANCE" resolve="INSTANCE" />
+                <ref role="1PxDUh" to="v8zi:~MPSLanguageRegistry" resolve="MPSLanguageRegistry" />
               </node>
             </node>
           </node>
