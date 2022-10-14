@@ -7,13 +7,6 @@ plugins {
 val mpsVersion: String by project
 
 
-
-repositories {
-    mavenLocal()
-    maven { url = uri("https://artifacts.itemis.cloud/repository/maven-mps/") }
-    mavenCentral()
-}
-
 dependencies {
     val modelixCoreVersion = "1.3.2"
     api("org.modelix:model-api:$modelixCoreVersion")
@@ -36,8 +29,6 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
     }
 }
 
-val gitLabPrivateToken: String? by project
-
 publishing {
     publications {
         create<MavenPublication>("maven") {
@@ -45,17 +36,4 @@ publishing {
             from(components["java"])
         }
     }
-
-    repositories {
-        mavenLocal()
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/modelix/api-gen")
-            credentials {
-                username = project.findProperty("gpr.user") as? String ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") as? String ?: System.getenv("TOKEN")
-            }
-        }
-    }
-
 }

@@ -15,9 +15,6 @@ plugins {
 }
 
 repositories {
-    mavenLocal()
-    maven { url = uri("https://artifacts.itemis.cloud/repository/maven-mps/") }
-    mavenCentral()
     maven {
         url = uri("https://maven.pkg.github.com/modelix/modelix")
         credentials {
@@ -155,17 +152,6 @@ publishing {
         create<MavenPublication>("mps-plugin") {
             artifactId = "mps-plugin"
             artifact(packageMpsPlugin)
-        }
-    }
-    repositories {
-        mavenLocal()
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/modelix/api-gen")
-            credentials {
-                username = project.findProperty("gpr.user") as? String ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") as? String ?: System.getenv("TOKEN")
-            }
         }
     }
 }
