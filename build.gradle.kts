@@ -11,8 +11,7 @@ println("Version: $version")
 ext["mpsVersion"] = "2020.3.6"
 ext["mpsExtensionsVersion"] = "2020.3.2460.1bab41f"
 
-gpruser = project.findProperty("gpr.user") as? String ?: System.getenv("GITHUB_ACTOR")
-println("GPR user: $gpruser")
+println("GPR user: " + project.findProperty("gpr.user") as? String ?: System.getenv("GITHUB_ACTOR"))
 
 fun computeVersion(): Any {
     val versionFile = file("version.txt")
