@@ -11,6 +11,7 @@ println("Version: $version")
 ext["mpsVersion"] = "2020.3.6"
 ext["mpsExtensionsVersion"] = "2020.3.2460.1bab41f"
 
+println("GHP user: project.findProperty("gpr.user") as? String ?: System.getenv("GITHUB_ACTOR")")
 
 fun computeVersion(): Any {
     val versionFile = file("version.txt")
@@ -42,8 +43,8 @@ subprojects {
                     name = "GitHubPackages"
                     url = uri("https://maven.pkg.github.com/modelix/api-gen")
                     credentials {
-                        username = project.findProperty("gpr.user") as? String ?: System.getenv("USERNAME")
-                        password = project.findProperty("gpr.key") as? String ?: System.getenv("TOKEN")
+                        username = project.findProperty("gpr.user") as? String ?: System.getenv("GITHUB_ACTOR")
+                        password = project.findProperty("gpr.key") as? String ?: System.getenv("GITHUB_TOKEN")
                     }
                 }
                 if (project.hasProperty("artifacts.itemis.cloud.user")) {

@@ -5,11 +5,13 @@ on:
     tags:
       - '**'
 
+# Obtain tokens and secrets from github repository secrets
+env:
+  GITHUB_ACTOR: ${{ github.actor }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   newRelease:
-    env:
-      TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      USERNAME: ${{ github.actor }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
