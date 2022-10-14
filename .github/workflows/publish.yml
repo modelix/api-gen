@@ -7,6 +7,9 @@ on:
 
 jobs:
   newRelease:
+    env:
+      TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      USERNAME: ${{ github.actor }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
