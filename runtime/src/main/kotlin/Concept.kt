@@ -1,7 +1,6 @@
 package org.modelix.mps.apigen.runtime
 
 import org.modelix.model.api.*
-import org.modelix.model.area.IArea
 import java.lang.IllegalStateException
 
 abstract class AbstractConcept<T: INodeHolder>(
@@ -98,7 +97,7 @@ abstract class AbstractConcept<T: INodeHolder>(
 
     override fun getReference(): IConceptReference {
         if (!initilized) throw IllegalStateException("Concept not initilised!")
-        return MPSConceptReference(this)
+        return ConceptReference(getUID())
     }
 
     override val language: ILanguage?
@@ -123,6 +122,7 @@ class MPSChildLink(
     override val isOptional: Boolean,
     override val name: String
 ) : IChildLink {
+    @Deprecated("use .targetConcept")
     override val childConcept: IConcept
         get() = type
 
@@ -135,21 +135,7 @@ class MPSChildLink(
     }
 
     override val targetConcept: IConcept
-        get() = childConcept
-}
-
-class MPSConceptReference(private val concept: AbstractConcept<*>) : IConceptReference {
-    override fun resolve(area: IArea?): IConcept? {
-        TODO("Not yet implemented")
-    }
-
-    override fun serialize(): String {
-        TODO("Not yet implemented")
-    }
-
-    override fun getUID(): String {
-        TODO("Not yet implemented")
-    }
+        get() = type
 }
 
 class MPSProperty(private val concept: AbstractConcept<*>, override val name: String) : IProperty {
