@@ -72,6 +72,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -118,6 +119,9 @@
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -258,6 +262,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -810,6 +822,79 @@
                     <node concept="35c_gC" id="4kJudDzqKUp" role="37wK5m">
                       <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="1PIdkqCrSm" role="3cqZAp">
+              <node concept="3clFbS" id="1PIdkqCrSo" role="3clFbx">
+                <node concept="3SKdUt" id="1PIdkqCxqS" role="3cqZAp">
+                  <node concept="1PaTwC" id="1PIdkqCxqT" role="1aUNEU">
+                    <node concept="3oM_SD" id="1PIdkqCxDi" role="1PaTwD">
+                      <property role="3oM_SC" value="The" />
+                    </node>
+                    <node concept="3oM_SD" id="1PIdkqCxCo" role="1PaTwD">
+                      <property role="3oM_SC" value="typesystem" />
+                    </node>
+                    <node concept="3oM_SD" id="1PIdkqCxCs" role="1PaTwD">
+                      <property role="3oM_SC" value="for" />
+                    </node>
+                    <node concept="3oM_SD" id="1PIdkqCxCx" role="1PaTwD">
+                      <property role="3oM_SC" value="specialized" />
+                    </node>
+                    <node concept="3oM_SD" id="1PIdkqCxCZ" role="1PaTwD">
+                      <property role="3oM_SC" value="link" />
+                    </node>
+                    <node concept="3oM_SD" id="1PIdkqCxD9" role="1PaTwD">
+                      <property role="3oM_SC" value="is" />
+                    </node>
+                    <node concept="3oM_SD" id="1PIdkqCxDq" role="1PaTwD">
+                      <property role="3oM_SC" value="unsound." />
+                    </node>
+                    <node concept="3oM_SD" id="1PIdkqCxDz" role="1PaTwD">
+                      <property role="3oM_SC" value="Javas" />
+                    </node>
+                    <node concept="3oM_SD" id="1PIdkqCxDS" role="1PaTwD">
+                      <property role="3oM_SC" value="typesystem" />
+                    </node>
+                    <node concept="3oM_SD" id="1PIdkqCxDH" role="1PaTwD">
+                      <property role="3oM_SC" value="doesn't" />
+                    </node>
+                    <node concept="3oM_SD" id="1PIdkqCxE4" role="1PaTwD">
+                      <property role="3oM_SC" value="like" />
+                    </node>
+                    <node concept="3oM_SD" id="1PIdkqCxEh" role="1PaTwD">
+                      <property role="3oM_SC" value="them." />
+                    </node>
+                    <node concept="3oM_SD" id="1PIdkqCxCI" role="1PaTwD">
+                      <property role="3oM_SC" value="" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="1PIdkqCwI4" role="3cqZAp">
+                  <node concept="3clFbT" id="1PIdkqCwWf" role="3cqZAk" />
+                </node>
+              </node>
+              <node concept="17R0WA" id="1PIdkqCvoR" role="3clFbw">
+                <node concept="2OqwBi" id="1PIdkqCvYo" role="3uHU7w">
+                  <node concept="37vLTw" id="1PIdkqCvBv" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4kJudDzqBzL" resolve="link" />
+                  </node>
+                  <node concept="3TrcHB" id="1PIdkqCwst" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1PIdkqCudI" role="3uHU7B">
+                  <node concept="2OqwBi" id="1PIdkqCssm" role="2Oq$k0">
+                    <node concept="37vLTw" id="1PIdkqCs6Z" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4kJudDzqBzL" resolve="link" />
+                    </node>
+                    <node concept="3TrEf2" id="1PIdkqCth4" role="2OqNvi">
+                      <ref role="3Tt5mk" to="tpce:fA0ks94" resolve="specializedLink" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="1PIdkqCuuZ" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
               </node>
