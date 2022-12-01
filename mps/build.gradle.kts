@@ -38,7 +38,7 @@ val mpsExtensionsVersion : String by project
 
 
 downloadJbr {
-    jbrVersion = "11_0_10-b1341.41"
+    jbrVersion = "11.0.11+9-b1341.60"
 }
 
 dependencies {

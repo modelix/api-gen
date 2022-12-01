@@ -8,8 +8,8 @@ group = "org.modelix.mps.api-gen"
 description = "API generator"
 version = computeVersion()
 println("Version: $version")
-ext["mpsVersion"] = "2020.3.6"
-ext["mpsExtensionsVersion"] = "2020.3.2460.1bab41f"
+ext["mpsVersion"] = "2020.1.4"
+ext["mpsExtensionsVersion"] = "2021.1.+"
 
 println("GPR user: " + project.findProperty("gpr.user") as? String ?: System.getenv("GITHUB_ACTOR"))
 
