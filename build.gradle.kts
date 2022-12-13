@@ -3,13 +3,14 @@ plugins {
     id("com.palantir.git-version") version "0.13.0"
 }
 
-
 group = "org.modelix.mps.api-gen"
 description = "API generator"
+
 version = computeVersion()
 println("Version: $version")
-ext["mpsVersion"] = "2020.3.6"
-ext["mpsExtensionsVersion"] = "2020.3.2460.1bab41f"
+
+val mpsVersion: String by project
+val mpsExtensionsVersion: String by project
 
 println("GPR user: " + project.findProperty("gpr.user") as? String ?: System.getenv("GITHUB_ACTOR"))
 
