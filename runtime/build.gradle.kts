@@ -5,10 +5,9 @@ plugins {
 }
 
 val mpsVersion: String by project
-
+val modelixCoreVersion: String by project
 
 dependencies {
-    val modelixCoreVersion = "1.3.2"
     api("org.modelix:model-api:$modelixCoreVersion")
     api("org.modelix:model-client:$modelixCoreVersion")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
