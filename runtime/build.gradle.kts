@@ -1,7 +1,7 @@
 plugins {
     java
     `maven-publish`
-    kotlin("jvm") version "1.7.10"
+    kotlin("jvm") version "1.7.22"
 }
 
 val mpsVersion: String by project
@@ -10,7 +10,7 @@ val modelixCoreVersion: String by project
 dependencies {
     api("org.modelix:model-api:$modelixCoreVersion")
     api("org.modelix:model-client:$modelixCoreVersion")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }
 

@@ -1,6 +1,6 @@
 plugins {
     `maven-publish`
-    id("com.palantir.git-version") version "0.13.0"
+    id("com.palantir.git-version") version "0.15.0"
 }
 
 group = "org.modelix.mps.api-gen"
