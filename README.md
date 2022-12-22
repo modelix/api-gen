@@ -5,8 +5,8 @@
 ⚠ This component will soon™ be replaced by a version 2.0 ⚠
 
 If you plan on using the api-gen, consider directly using the new version at
-(metamodel-generator)[https://github.com/modelix/modelix.core/tree/main/metamodel-generator] to avoid migration later on.
-For convenience there is also a gradle plugin to help you generate MPS -> metamodel API available: (metamodel-gradle)[https://github.com/modelix/modelix.core/tree/main/metamodel-gradle]
+[metamodel-generator](https://github.com/modelix/modelix.core/tree/main/metamodel-generator) to avoid migration later on.
+For convenience there is also a gradle plugin to help you generate MPS -> metamodel API available: [metamodel-gradle](https://github.com/modelix/modelix.core/tree/main/metamodel-gradle).
 
 
 
