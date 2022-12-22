@@ -1,5 +1,17 @@
 # MPS API Gen
 
+## Deprecation note
+
+⚠ This component will soon™ be replaced by a version 2.0 ⚠
+
+If you plan on using the api-gen, consider directly using the new version at
+(metamodel-generator)[https://github.com/modelix/modelix.core/tree/main/metamodel-generator] to avoid migration later on.
+For convenience there is also a gradle plugin to help you generate MPS -> metamodel API available: (metamodel-gradle)[https://github.com/modelix/modelix.core/tree/main/metamodel-gradle]
+
+
+
+## General
+
 MPS API Gen is code generator and runtime library that allows to export MPS metamodels into Java classes that provide a
 type safe wrapper around the modelix model api. The generated code is completely independent of MPS. The generated code
 can work with any implementation of the modelix model api, e.g. the modelix model server/client, mps-rest-model-access
@@ -41,22 +53,22 @@ in MPS will also implement it in Java.
 A concept like this:
 
 ```
-concept Room extends BaseConcept                                                                                                                                                          
-             implements INamedConcept                                                                                                                                                     
-                                                                                                                                                                                          
-instance can be root: false 
-alias: <no alias> 
-short description: <no short description> 
- 
-properties: 
+concept Room extends BaseConcept
+             implements INamedConcept
+
+instance can be root: false
+alias: <no alias>
+short description: <no short description>
+
+properties:
 maxPlaces : integer
-hasRemoteEquipment : boolean         
- 
-children: 
-<< ... >> 
- 
-references: 
-<< ... >>                                                                                                                                                                              
+hasRemoteEquipment : boolean
+
+children:
+<< ... >>
+
+references:
+<< ... >>
 ```
 
 <details>
@@ -201,22 +213,22 @@ IConceptReferenceSerializer.register(MPSLanguageRegistry())
 The code generator will automatically take language hierarchy into account when exporting concepts.
 
 ```mermaid
-    classDiagram 
+    classDiagram
         class A {
         <<language>>
         }
-        
+
         class B {
         <<language>>
         }
-        
+
         class C {
         <<language>>
         }
-        
+
         A <|-- B
         B <|-- C
-    
+
 ```
 
 In case you are specifying language `C` to be exported the code generator will also export `B` and `A` because it
@@ -231,7 +243,7 @@ A minimum example on how to use the generated code would look like this:
 
 fun getRoot(): List<INode> {
     /*
-      The implementation of the get roots method will depend on the type of 
+      The implementation of the get roots method will depend on the type of
       modelix API client you use and isn't part of the example.
     */
 }
@@ -280,7 +292,7 @@ val nodeA = MPSLanguageRegistry.getInstance<AbstractNode>(iNode)
 val nodeB = MPSLanguageRegistry.getInstance<AbstractNode>(iNode)
 
 
-nodeA === nodeB // false 
+nodeA === nodeB // false
 nodeA == nodeB // true
 
 ```
@@ -299,6 +311,6 @@ independent
 by `MPSLanguageRegistry.getInstance`
 will be considered equal even if the point to two different `INode` instances. e.g. the "modelix/rest-model-access"
 client
-chooses to implement their `INode` instances that way because the client acts as a proxy to a node stored inside of MPS. 
+chooses to implement their `INode` instances that way because the client acts as a proxy to a node stored inside of MPS.
 
 
