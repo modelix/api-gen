@@ -10,7 +10,7 @@ val modelixCoreVersion: String by project
 dependencies {
     api("org.modelix:model-api:$modelixCoreVersion")
     api("org.modelix:model-client:$modelixCoreVersion")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.1")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 }
 
