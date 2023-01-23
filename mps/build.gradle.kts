@@ -10,7 +10,7 @@ buildscript {
 }
 
 plugins {
-    id("download-jbr") version "1.9.315.4487934"
+    id("download-jbr") version "2.0.327.ec8074e"
     `maven-publish`
 }
 
