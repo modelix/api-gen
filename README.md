@@ -1,3 +1,17 @@
+⚠ THIS PROJECT WAS REPLACED BY ANOTHER MODELIX COMPONENT ⚠
+
+The `metamodel-generator` replaces this component.
+It will no longer require MPS plugins to generate a runtime library based on a meta-model.
+Instead you can define and trigger the API generation via gradle.
+
+For more information check the gradle wrapper for this component:
+
+https://github.com/modelix/modelix.core/tree/main/metamodel-gradle
+
+
+
+
+
 # MPS API Gen
 
 ## Deprecation note
